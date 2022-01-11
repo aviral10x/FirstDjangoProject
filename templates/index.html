@@ -11,12 +11,9 @@
 <body>
     <h1>Hello World!!!</h1>
     <ul>
-      <li>JAVA</li>
-      <li>C++</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JAVASCRIPT</li>
-      <li>DJANGO</li>
+      {% for language in languages %}
+        <li>{{language}}</li>
+        {% endfor %}
     </ul>
 
     <span>Made By: {{developer}}</span>
