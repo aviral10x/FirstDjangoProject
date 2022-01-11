@@ -14,8 +14,8 @@ def index(request):
         ]
 
     context = {
-            developer: "developed_by",
-            languages: "languages"
+            "developer": developed_by,
+            "languages": languages
         }
     response = render(request, 'index.html', context)
 
