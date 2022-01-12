@@ -7,15 +7,10 @@
    <title>Document</title>
    <link rel="stylesheet" type= "text/css" media= "screen" href="/css/master.css">
    <script src="main.js"></script>
+   {% block head %} {% endblock %}
  </head>
-<body>
-    <h1>Hello World!!!</h1>
-    <ul>
-      {% for language in languages %}
-        <li>{{language}}</li>
-        {% endfor %}
-    </ul>
+ <body>
+   {% block body %} {% endblock %}
+  </body>
 
-    <span>Made By: {{developer}}</span>
-</body>
 </html>

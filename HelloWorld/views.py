@@ -17,6 +17,6 @@ def index(request):
             "developer": developed_by,
             "languages": languages
         }
-    response = render(request, 'index.html', context)
+    response = render(request, 'HelloWorld/index.html', context)
 
     return response
