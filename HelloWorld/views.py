@@ -20,3 +20,6 @@ def index(request):
     response = render(request, 'HelloWorld/index.html', context)
 
     return response
+
+def hello(request):
+    return render(request, "HelloWorld/hello.html")    
