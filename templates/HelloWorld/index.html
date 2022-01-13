@@ -1,10 +1,17 @@
 {% extends "HelloWorld/base.html"%}
+
   {% block body %}
-  <h1>Hello World!!!</h1>
-  <ul>
-    {% for language in languages %}
-      <li>{{language}}</li>
-      {% endfor %}
-  </ul>
-  <span>Made By: {{developer}}</span>
+
+  {% include 'HelloWorld/navbar.html' %}
+
+  <div class="container">
+    <h1>Hello World!!!</h1>
+    <ul class="collection">
+      {% for language in languages %}
+        <li class="collection-item">{{language}}</li>
+        {% endfor %}
+    </ul>
+    <span>Made By: {{developer}}</span>
+  </div>
+
   {% endblock %}
